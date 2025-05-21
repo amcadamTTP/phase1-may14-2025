@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(12, 12, 12);
+  color: rgb(169, 169, 169);
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(201, 255, 41);
+  border: none;
+  border-radius: 1rem;
+}
+
+button:hover {
+  animation: button-fade 0.2s;
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+footer > * {
+  flex: 0 1 10rem;
+}
+
+#footer-info {
+  flex: 1;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: block;
+  }
+}
+
+@keyframes button-fade {
+  from {
+    background-color: rgb(201, 255, 41);
+  }
+
+  to {
+    background-color: white;
+  }
+}
